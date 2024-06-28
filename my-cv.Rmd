@@ -27,10 +27,9 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 library(dplyr)
+library(fontawesome)
 library(tibble)
-
 # remotes::install_github("mitchelloharawild/vitae")
-
 library(vitae)
 ```
 
@@ -41,9 +40,9 @@ library(vitae)
 
 tribble(
   ~Degree, ~Year, ~ Institution,
-  "Doctor of Philosophy (Botany/Plant Ecology)", "2017-Present", "Panjab University, Chandigarh, IN",
-  "Master of Science (Botany)", "2015-2017", "Panjab University, Chandigarh, IN",
-  "Bachelor of Science (Botany, Chemistry, Zoology)", "2012-2015", "Arya PG College, Panipat, IN"
+  "Doctor of Philosophy (Botany/Plant Ecology)", "2017 -- Present", "Panjab University, Chandigarh, IN",
+  "Master of Science (Botany)", "2015 -- 2017", "Panjab University, Chandigarh, IN",
+  "Bachelor of Science (Botany, Chemistry, Zoology)", "2012 -- 2015", "Arya PG College, Panipat, IN"
 ) |> 
   detailed_entries(what = Institution, where = Year, with = Degree)
 ```
@@ -84,9 +83,9 @@ A complete list of publications is available from my ORCID (<https://orcid.org/0
 
 - Kumar, P., **Kumar, A.**, Patil, M., Hussain, S., & Singh, A. N. (2024). Factors influencing tree biomass and carbon stock in the Western Himalayas, India. *Frontiers in Forests and Global Change, 6*, 1328694. <https://doi.org/10.3389/ffgc.2023.1328694>
 
-- Singh, A. N., & **Kumar, A.** (2022). Comparative soil restoration potential of exotic and native woody plantations on coal mine spoil in a dry tropical environment of India: A case study. *Land Degradation & Development, 33*(12), 1971--1984. <https://doi.org/10.1002/ldr.4286>
+- Singh, A. N., & **Kumar, A.** (2022b). Comparative soil restoration potential of exotic and native woody plantations on coal mine spoil in a dry tropical environment of India: A case study. *Land Degradation & Development, 33*(12), 1971--1984. <https://doi.org/10.1002/ldr.4286>
 
-- Singh, A. N., & **Kumar, A.** (2022). Ecological performances of exotic and native woody species on coal mine spoil in Indian dry tropical region. *Ecological Engineering, 174*, 106470. <https://doi.org/10.1016/j.ecoleng.2021.106470>
+- Singh, A. N., & **Kumar, A.** (2022a). Ecological performances of exotic and native woody species on coal mine spoil in Indian dry tropical region. *Ecological Engineering, 174*, 106470. <https://doi.org/10.1016/j.ecoleng.2021.106470>
 
 - **Kumar, A.**, Patil, M., Kumar, P., Kumar, M., & Singh, A. N. (2022). Plant ecology in Indian Siwalik range: A systematic map and its bibliometric analysis. *Tropical Ecology, 63*(3), 338--350. <https://doi.org/10.1007/s42965-022-00229-x>
 
@@ -99,43 +98,45 @@ A complete list of publications is available from my ORCID (<https://orcid.org/0
 
 - **Kumar, A.**, Yadav, R., Patil, M., Kumar, P., Zhang, L., Kaur, A., Sharma, S., Hussain, S., Tokas, D., & Singh, A. N. (2020). Sustainable management of national parks and protected areas for conserving biodiversity in India. In L. Zhang (Ed.), *Advances in forest management under global change* (pp. 75--91). IntechOpen. <https://doi.org/10.5772/intechopen.92435>
 
+## Under communication
+
+- **Kumar, A.**, Patil, M., Kumar, P., & Singh, A. N. (2023). Determinants of plant species richness along elevational gradients: Insights with climate, energy and water-energy dynamics. Preprint (Version 1) available at Research Square. <https://doi.org/10.21203/rs.3.rs-3352045>
+
+- **Kumar, A.**, Patil, M., Kumar, P., & Singh, A. N. (2024). Exploring elevational patterns of plant species richness: Insights from Western Himalayas. <https://github.com/kumar-a/richness-patterns> (under review in *Ecology and Evolution*)
+
+- **Kumar, A.**, Patil, M., Kumar, P., & Singh, A. N. (2024). Climate-driven elevational range dynamics of plant distributions: Insights from Western Himalayas. <https://github.com/kumar-a/shifting-distributions> (submitted to *Ecological Applications*)
+
+- Patil, M., **Kumar, A.**, Kumar, P., & Singh, A. N. (2024). Mycorrhizal fungi accelerate litter decomposition rates in forest ecosystems. <https://github.com/kumar-a/patil_et_al-2023> (submitted to *Forests*)
+
+
 # Skills and Qualifications
 
 A full list of accomplishments and certificates is available from my webpage (<https://akumar.netlify.app>)
 
-- `R` statistical environment and `RStudio`
-- Data analysis and visualisation (`MuMIn`, `piecewiseSEM`, `stats`, `tidyverse`)
+## Analytical skills
+
+- `r fontawesome::fa(name = "r-project", fill = "#026dbb")` statistical environment and `RStudio`
+- Data analysis and visualization (`MuMIn`, `stats`, `tidyverse`)
 - Mapping and spatial data analysis (`ggplot2`, `sf`, `terra`, `tmap`)
-- Species distribution modelling (`biomod2`, `MaxEnt`)
-- Systematic reviews and meta-analysis (`bibliometrix`, `metafor`, `revtools`)
-- Reproducible research (`git`, `quarto`, `rmarkdown`, `knitr`)
-- Microsoft office (`Excel`, `PowerPoint`, `Word`)
-- Reference management (`Mendeley`)
+- Species distribution modeling (`biomod2`, `MaxEnt`)
+- Structural equation modeling (`piecewiseSEM`)
+
+## Academic writing
+
 - Scientific and technical writing
+- Reproducible research (`git`, `quarto`, `rmarkdown`, `knitr`)
+- Systematic reviews and meta-analysis (`bibliometrix`, `metafor`, `revtools`)
 
 # Professional Memberships
 
 ```{r}
-
 tribble(
   ~Membership, ~Year, ~Institution, ~Where,
-  "Student member (#521)", "2023-Present", "Society of Open, Reliable and Transparent Ecology and Evolutionary Biology (SORTEE)", "Keizer, Oregon, US",
-  "Life member (#L-1599)", "2022-Present", "Punjab Academy of Sciences", "Patiala, Punjab, IN",
-  "Student member (#67527876)", "2021-2025", "International Association for Vegetation Science (IAVS)", "Bethesda, Maryland, US"
+  "Student member (#521)", "2023 -- Present", "Society of Open, Reliable and Transparent Ecology and Evolutionary Biology (SORTEE)", "Salem, Oregon, US",
+  "Life member (#L-1599)", "2022 -- Present", "Punjab Academy of Sciences", "Patiala, Punjab, IN",
+  "Student member (#67527876)", "2021 -- 2025", "International Association for Vegetation Science (IAVS)", "Bethesda, Maryland, US"
 ) |> 
   detailed_entries(Membership, Year, Institution, Where)
 ```
 
-# References
-
-```{r}
-# what, when, where, with, why
-tribble(
-  ~Referee, ~Address, ~Relation, ~Email,
-  "Dr. Anand Narain Singh", "Panjab University, Chandigarh, IN", "PhD Supervisor", "dranand1212@gmail.com",
-  "Prof. Amrik Singh Ahluwalia", "Eternal University, Sirmaur, IN", "MSc Supervisor", "amrik.s511@gmail.com",
-  "Dr. Balkar Singh", "Arya PG College, Panipat, IN", "BSc Lecturer", "balkararya@gmail.com"
-) |>
-  detailed_entries(what = Relation, where = Address, with = Referee, when = Email)
-```
 

@@ -47,27 +47,17 @@ tribble(
   detailed_entries(what = Institution, where = Year, with = Degree)
 ```
 
-# Awards and Distinctions
-
-```{r dist}
-# what, when, with, where, why
-tribble(
-  ~what, ~date, ~org, 
-  "Young Scientist Award", "2022", "Punjab Academy of Sciences, Patiala",
-  "Best Poster Award", "2020", "National Conference on Climate Change, CSIR-NBRI, Lucknow",
-  "Junior Research Fellowship", "2017", "University Grants Commission, New Delhi") |> 
-    detailed_entries(what = org, when = date, with = what, .protect = FALSE)
-```
-
 # Research Interests
 
-- **Macroecology** Elevational patterns and determinants of plant species richness
+- **Macroecology** Patterns and determinants of plant species richness along elevational gradients
 
 - **Population Ecology** Climate-related redistribution of mountain trees (*Pinus*, *Quercus* and *Rhododendron*)
 
 - **Ecosystem Ecology** Patterns and determinants of litter decomposition in terrestrial ecosystems
 
 - **Restoration Ecology** Ecological restoration of coal mine spoils
+
+- **Research Synthesis** Bibliometrics, systematic reviews, and meta-analysis
 
 # Selected Publications
 
@@ -81,7 +71,7 @@ A complete list of publications is available from my ORCID (<https://orcid.org/0
 #     arrange(desc(issued))
 ```
 
-- Kumar, P., **Kumar, A.**, Patil, M., Hussain, S., & Singh, A. N. (2024). Factors influencing tree biomass and carbon stock in the Western Himalayas, India. *Frontiers in Forests and Global Change, 6*, 1328694. <https://doi.org/10.3389/ffgc.2023.1328694>
+- **Kumar, A.**, Kumar, P., Patil, M., Hussain, S., Yadav, R., Sharma, S., Tokas, D., Singh, S., & Singh, A. N. (2024). Disturbance and vegetational structure in an urban forest of Indian Siwaliks: an ecological assessment. *Environmental Monitoring and Assessment, 196*(8), 691. <https://doi.org/10.1007/s10661-024-12801-0>
 
 - Singh, A. N., & **Kumar, A.** (2022b). Comparative soil restoration potential of exotic and native woody plantations on coal mine spoil in a dry tropical environment of India: A case study. *Land Degradation & Development, 33*(12), 1971--1984. <https://doi.org/10.1002/ldr.4286>
 
@@ -94,17 +84,15 @@ A complete list of publications is available from my ORCID (<https://orcid.org/0
 
 ## Book chapters
 
-- **Kumar, A.**, Patil, M., Kumar, P., & Singh, A. N. (2021). Phosphorus and litter decomposability traits in tropical forest ecosystems under changing environment: A synthesis. In R. K. Chaturvedi, R. Singh, & R. Bhadouria (Eds.), *Tropical dry forests: Emerging features and ecological perspectives* (pp. 311--336). Nova Science Publishers.
-
 - **Kumar, A.**, Yadav, R., Patil, M., Kumar, P., Zhang, L., Kaur, A., Sharma, S., Hussain, S., Tokas, D., & Singh, A. N. (2020). Sustainable management of national parks and protected areas for conserving biodiversity in India. In L. Zhang (Ed.), *Advances in forest management under global change* (pp. 75--91). IntechOpen. <https://doi.org/10.5772/intechopen.92435>
 
 ## Under communication
 
-- **Kumar, A.**, Patil, M., Kumar, P., & Singh, A. N. (2023). Determinants of plant species richness along elevational gradients: Insights with climate, energy and water-energy dynamics. Preprint (Version 1) available at Research Square. <https://doi.org/10.21203/rs.3.rs-3352045>
+- **Kumar, A.**, Patil, M., Kumar, P., & Singh, A. N. (2023). Determinants of plant species richness along elevational gradients: Insights with climate, energy and water-energy dynamics. Preprint (Version 1) available at Research Square. <https://doi.org/10.21203/rs.3.rs-3352045> (under review in *Ecological Processes*)
 
-- **Kumar, A.**, Patil, M., Kumar, P., & Singh, A. N. (2024). Exploring elevational patterns of plant species richness: Insights from Western Himalayas. <https://github.com/kumar-a/richness-patterns> (under review in *Ecology and Evolution*)
+- **Kumar, A.**, Patil, M., Kumar, P., & Singh, A. N. (2024a). Exploring elevational patterns of plant species richness: Insights from Western Himalayas. <https://github.com/kumar-a/richness-patterns> (under review in *Ecology and Evolution*)
 
-- **Kumar, A.**, Patil, M., Kumar, P., & Singh, A. N. (2024). Climate-driven elevational range dynamics of plant distributions: Insights from Western Himalayas. <https://github.com/kumar-a/shifting-distributions> (submitted to *Ecological Applications*)
+- **Kumar, A.**, Patil, M., Kumar, P., & Singh, A. N. (2024b). Climate-driven elevational range dynamics of plant distributions: Insights from Western Himalayas. <https://github.com/kumar-a/shifting-distributions> (submitted to *Ecological Applications*)
 
 - Patil, M., **Kumar, A.**, Kumar, P., & Singh, A. N. (2024). Mycorrhizal fungi accelerate litter decomposition rates in forest ecosystems. <https://github.com/kumar-a/patil_et_al-2023> (submitted to *Forests*)
 
@@ -117,15 +105,27 @@ A full list of accomplishments and certificates is available from my webpage (<h
 
 - `r fontawesome::fa(name = "r-project", fill = "#026dbb")` statistical environment and `RStudio`
 - Data analysis and visualization (`MuMIn`, `stats`, `tidyverse`)
-- Mapping and spatial data analysis (`ggplot2`, `sf`, `terra`, `tmap`)
+- Spatial data analysis (`bfast`, `MODISTools`, `sf`, `terra`, `tmap`)
 - Species distribution modeling (`biomod2`, `MaxEnt`)
 - Structural equation modeling (`piecewiseSEM`)
+- Systematic reviews and meta-analysis (`bibliometrix`, `metafor`, `revtools`)
 
 ## Academic writing
 
 - Scientific and technical writing
 - Reproducible research (`git`, `quarto`, `rmarkdown`, `knitr`)
-- Systematic reviews and meta-analysis (`bibliometrix`, `metafor`, `revtools`)
+
+# Awards and Distinctions
+
+```{r dist}
+# what, when, with, where, why
+tribble(
+  ~what, ~date, ~org, 
+  "Young Scientist Award", "2022", "Punjab Academy of Sciences, Patiala",
+  "Best Poster Award", "2020", "National Conference on Climate Change, CSIR-NBRI, Lucknow",
+  "Junior Research Fellowship", "2017", "University Grants Commission, New Delhi") |> 
+    detailed_entries(what = org, when = date, with = what, .protect = FALSE)
+```
 
 # Professional Memberships
 
